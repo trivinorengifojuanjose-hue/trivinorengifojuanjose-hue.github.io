@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contraseña y Seguridad</title>
+    <link rel="stylesheet" href="contraseñayseguridad.css">
+    <link key="app-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/account-management/eg/static/webpack/./styles.epic-account-management.f0087e3541aaa9e04d96.css" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="nav">
+        <ul class="list">
+
+            <li class="list__item">
+                <div class="list__button">
+                    <img src="inicio.svg" class="list__img">
+                    <a href="menuadministrativo.php" class="nav__link">Inicio</a>
+                </div>
+            </li>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="papel.svg" class="list__img">
+                    <a href="#" class="nav__link">Cuenta</a>
+                    <img src="flecha.svg" class="list__arrow">
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="ajustescuenta.php" class="nav__link nav__link--inside">Ajustes de Cuenta</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="contraseñayseguridad.html" class="nav__link nav__link--inside">Contraseña y Seguridad</a>
+                    </li>
+                </ul>
+
+            </li>
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="campana.svg" class="list__img">
+                    <a href="#" class="nav__link">Notificaciones</a>
+                    <img src="flecha.svg" class="list__arrow">
+                </div>
+
+            
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click" >
+                    <img src="papel.svg" class="list__img">
+                    <a href="calendario2.php" class="nav__link">Registro</a>
+                    <img src="flecha.svg" class="list__arrow">
+                </div>
+
+
+            
+        </ul>
+    </nav>
+    <div class="maincontainer">
+
+        <div class="box">
+            <div class="infocontraseña">
+                <form action="CambiarContraseña.php" method="post" id="ChangePass">
+                    <h2> CAMBIAR CONTRASEÑA </h2>
+                    <p>¡Recuerda!. Debes cambiar tu contraseña cada 2 meses</p>
+    
+                    <div class="contraseña">
+                        
+                        <div class="new">
+                            <h3>NUEVA CONTRASEÑA</h3>
+                            <p class="required">(OBLIGATORIO)</p>
+    
+                            <div class="container-new">
+                                <input class="input password" type="password" name="Pass1" id="newpassword">
+                                <div for="email" class="control-label"> NUEVA CONTRASEÑA </div>
+                            </div>
+    
+                            <div class="container-confirm">
+                                <h3>REESCRIBiR NUEVA CONTRASEÑA</h3>
+                                <p class="required">(OBLIGATORIO)</p>
+                                
+                                <input class="input password" type="password" name="Pass2" id="confirmpassword">
+                                <div for="email" class="control-label"> REESCRIBE NUEVA CONTRASEÑA </div>
+                            </div>
+                        </div>
+    
+                        <div class="rule">
+                            <h3>REQUISITOS POR SEGURIDAD</h3>
+    
+                            <div class="descripcion">
+                                <p class="caracteristicas">1) Su contraseña no debe ser la misma que las últimas 2 contraseñas utilizadas</p>
+                                <p class="caracteristicas">2) Su contraseña debe tener 10 caracteres</p>
+                                <p class="caracteristicas">3) Su contraseña debe tener al menos 2 números</p>
+                                <p class="caracteristicas">4) Su contraseña no debe contener espacios</p>
+                                <p class="caracteristicas">5) Su contraseña debe tener signos de interrogación</p>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="guardar">
+                        <button type="reset" class="cancelar"> DESCARTAR CAMBIOS </button>
+                        <button class="save" type="submit" name="editar"> GUARDAR CAMBIOS </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div> <!--MAINCONTAINER-->
+
+    <script src="JS/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
+*{
+box-sizing: border-box;
+
+}
+.main-header{
+background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2) ), 
+url("2.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+margin: 0;
+height: 100vh;
+font-family: Dosis,sans-serif;
+position: relative;
+}
+.main-nav{
+
+display: flex;
+background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5) );
+}
+.logo{
+
+	display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 50px;
+margin-right: 270px;
+padding: 20px 40px;
+font-size:1.3rem; 
+color: #fff;
+}
+
+ul{
+	
+display: flex;
+margin-right: 100px;
+}
+ul li a{
+
+display: inline-block;	
+padding: 20px 40px;
+font-size: 1.3rem;
+color: #fff;
+}
+ul li a:hover{
+	background: #ee9d1b ;
+	border: 2px solid #fff;
+	padding: 17px 35px;
+}
+
+.content-header{
+	color:#fff;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+
+}
+.content-header h1{
+font-size: 7rem;
+
+}
+.content-header p{
+font-size: 1.5rem;
+margin: 15px 30px;
+}
+.content-header a{
+font-size: 1.5rem;
+display: inline-block;
+padding: 10px 15px;
+background: #ee9d1b ;
+border-radius: 25px;
+color: #fff;
+
+}
+.content-header a:hover{
+	background: #fc9b00 ;
+	border: 2px solid #fff;
+	padding: 8px 10px;
+
+}
+
+#atras-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    background-color: coral;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }  #atras-btn:hover {
+    background-color: #ff8c00;
+  }

@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #171717;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+}
+
+.nav{
+    width: 250px;
+    font-size: 15px;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.nav__link{
+    color: #ccc;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+
+.nav__link--inside{
+    border-radius: 6px ;
+    padding-left: 20px;
+    text-align: left;
+}
+.nav__link--inside:hover{
+    background: rgb(202, 75, 75);
+}
+
+.list{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    background: rgb(255, 255, 255);
+}
+
+.list__item{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list__item--click{
+    cursor: pointer;
+}
+
+.list__button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.arrow .list__arrow{
+    transform: rotate(90deg);
+}
+
+.list__arrow{
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.list__show{
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #07aff1;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+}
+
+.maincontainer{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    display: block;
+}
+
+.box{
+    padding: 35px 30px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #6d6c6c;
+    color: #ccc;
+    line-height: 1.7;
+    width: 1000px;
+}
+
+.box h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.box h1{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.box p{
+    font-weight: 200;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+.contraseña{
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.new h3,
+.rule h3{
+    font-size: 14px;
+}
+
+.new{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.new .required{
+    font-size: 0.75em;
+}
+
+.container-new{
+    display: block;
+    position: relative;
+    padding: 0 15px 0 0;
+}
+
+.container-new input{
+    margin: 20px auto 25px;
+    width: 100%;
+    height: 45px;
+    padding: 12px 0 0 14px;
+    border-radius: 2px;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    border: 1px solid #ffffff;
+}
+
+.container-new .control-label{
+    font-weight: 100;
+    font-size: .725em;
+    position: absolute;
+    pointer-events: none;
+    left: 15.5px;
+    top: 32px;
+    transition: all .18s ease;
+    color: #ffffff;
+}
+
+.container-new input:focus ~.control-label{
+    top: 25px;
+    bottom: 10px;
+    left: 15.5px;
+    font-size: .55em;
+    opacity: 1;
+}
+
+.container-confirm{
+    display: block;
+    position: relative;
+    padding: 0 15px 0 0;
+}
+
+.container-confirm input{
+    margin: 20px auto 25px;
+    width: 100%;
+    height: 45px;
+    padding: 12px 0 0 14px;
+    border-radius: 2px;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    border: 1px solid #ffffff;
+}
+
+.container-confirm .control-label{
+    font-weight: 100;
+    font-size: .725em;
+    position: absolute;
+    pointer-events: none;
+    left: 15.5px;
+    top: 76px;
+    transition: all .18s ease;
+    color: #aeaeae;
+}
+
+.container-confirm input:focus ~.control-label{
+    top: 69px;
+    bottom: 10px;
+    left: 15.5px;
+    font-size: .55em;
+    opacity: 1;
+}
+
+.new{
+    padding-left: 0;
+    padding-right: 25px;
+    border-right: 1px solid #ebebeb;
+    width: 377px;
+}
+
+.rule{
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 377px;
+}
+
+.rule .descripcion{
+    margin-top: 45px;
+}
+
+.descripcion .caracteristicas{
+    color: rgb(255, 255, 255);
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-size: 14px;
+}
+
+.guardar{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.guardar .cancelar{
+    height: 45px;
+    background: #e6e6e6;
+    border: 0;
+    color: #ff0000;
+    outline-color: #964343;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    font-weight: 1000;
+    padding: 1em 2em;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 20px;
+}
+
+.guardar .cancelar:hover{
+    background: #ffffff;
+    transition: .3s;
+}
+
+.guardar .save{
+    height: 45px;
+    background: #b10000;
+    border: 0;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    font-weight: 400;
+    padding: 1em 2em;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 20px;
+}
+
+.guardar .save:hover{
+    background: #e20d0d;
+    transition: background-color .3s ease-in-out;
+}

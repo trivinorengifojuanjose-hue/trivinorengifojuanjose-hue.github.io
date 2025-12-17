@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Sastrería</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff; /* Azul claro */
+        color: #000000; /* Negro */
+        margin: 0;
+        padding: 0;
+    }
+    form {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ffffff; /* Blanco */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        text-align: center;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"], input[type="email"], textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    input[type="file"] {
+        margin-bottom: 20px;
+    }
+    input[type="submit"] {
+        background-color: #007bff; /* Azul */
+        color: #ffffff; /* Blanco */
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3; /* Azul oscuro */
+    }
+</style>
+</head>
+<body>
+
+<form id="formulario" enctype="multipart/form-data">
+    <h2>Formulario de Sastrería</h2>
+    <label for="nombre">Nombre del Propietario:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" required>
+    
+    
+    <label for="direccion">Coordenadas o Dirección:</label>
+    <textarea id="direccion" name="direccion" rows="4" required></textarea>
+    
+    <label for="descripcion">Descripción:</label>
+    <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+    
+    <label for="foto1">Foto 1:</label>
+    <input type="file" id="foto1" name="foto1" accept="image/*" required>
+    
+    <label for="foto2">Foto 2:</label>
+    <input type="file" id="foto2" name="foto2" accept="image/*" required>
+    
+    <input type="submit" value="Enviar">
+</form>
+<style>
+
+</style>
+</head>
+<body>
+
+
+
+<script>
+    function cargarContenido(event) {
+        event.preventDefault(); // Evita que el enlace redirija a otra página
+        var url = event.target.href; // Obtiene la URL del enlace
+        var contenidoAdicional = document.createElement('div'); // Crea un nuevo div
+        contenidoAdicional.classList.add('contenido'); // Añade la clase 'contenido'
+        
+        // Realiza una petición HTTP para obtener el contenido del archivo HTML
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', url, true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                contenidoAdicional.innerHTML = xhr.responseText; // Asigna el HTML obtenido al div creado
+                document.getElementById('contenido').appendChild(contenidoAdicional); // Agrega el div al documento
+            }
+        };
+        xhr.send();
+    }
+</script>
+
+</body>
+</html>
+<script>
+    // Aquí puedes agregar tu código JavaScript para manejar la subida de las fotos
+</script>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 98%;
+    vertical-align: baseline;
+    align-items: center;
+}
+
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background-image: url(home22.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+.precio {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    margin-bottom: 20px;
+ 
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    background: #43c538;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+
+#tabla-precios {
+    display: inline-block;
+    width: 90%;
+    margin-top: 170px;
+}
+
+/*Columnas*/
+
+.precio {
+    display: inline-block;
+    background-color: #f3f3f3;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0px 2px 5px rgb(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width:768px) {
+    .precio {
+        width: 32%;
+        float: left;
+        margin-right: 2%;
+    }
+
+    .precio:last-child {
+        margin-right: 0;
+    }
+}
+/*Headers*/
+h2 {
+    color: #000000;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.precio-header {
+    background-color: #07afb4;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.precio:nth-child(2) .precio-header {
+    background-color: rgb(77, 175, 68);
+}
+
+.precio-:nth-child(3) .precio-header {
+    background-color: #ffb649;
+}
+
+.precio--header h3 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.precio--header p {
+    text-align: center;
+    color: #f3f3f3;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/*Características*/
+
+.precio-features {
+    padding: 0 20px 20px 20px;
+}
+
+.precio-features p {
+    padding: 20px 0;
+    margin: 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.precio-features p:first-child,
+.precio-features p:last-child {
+    border-top: none;
+}
+
+/*Comprar*/
+
+.precio-comprar {
+    padding: 10px;
+    max-width: 250px;
+    text-align: center;
+    background-color: #023f4e;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    border: 2px solid #60bcd3;
+    transition: all 0.3s;
+}
+
+.precio-comprar a {
+    color: #f3f3f3;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.precio-comprar:hover {
+    background-color: #f3f3f3;
+    transition: all 0.3s;
+}
+
+.precio-comprar:hover a {
+    color: #0094b9;
+    transition: all 0.3s;
+}

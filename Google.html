@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mapageneral.css">
+    <link rel="stylesheet" href="mapageneral2.css">
+   
+    <title>Inicio</title>
+</head>
+<body>
+<style>
+  h1 {
+        text-align: center;
+        color: #ff8c00; /* Set your desired text color */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+        font-size: 36px; /* Adjust the font size */
+        margin-bottom: 20px; /* Add space below the heading */
+        position: fixed;
+        top: 0;
+        width: 100%;
+        
+        padding: 10px 0; /* Adjust padding as needed */
+        z-index: 1000; /* Set a high z-index to make sure it's on top */
+    margin-bottom: 20px; /* Add space below the heading */
+
+  }
+  body{
+  margin: 0;
+      padding: 0;
+      background-image: url('mapa.jpg'); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+        }
+</style>
+        <h1>Mira la sastreria mas cercana</h1>
+        
+    
+    
+       
+     
+  
+    <img src="logo aplicacion.png" alt="Logo de Modistería" style="width:150px;height:200px;position: fixed;top:20px;right:20px;z-index:9999999">
+
+        <main>
+            <div class="contact-in">
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1qCOMqVkLrVzYM_9KD7g_FcvPAWVd11Y&ehbc=2E312F" width="640" height="480"></iframe>
+                </div>
+              
+
+            </div>
+        </main>
+    </div>
+    <script>
+        $(window).on('load',function(){
+            $(".loader").fadeOut(1000);
+            $(".page").fadeIn(1000);
+        });
+    </script>
+      <br><br><br><br>
+       <a href="administracion.php" id="atras-btn">atras</a>
+       <style>    #atras-btn {
+               position: fixed;
+               bottom: 20px;
+               right: 50px;
+               background-color: coral;
+               color: white;
+               border: none;
+               border-radius: 5px;
+               padding: 10px 20px;
+               font-size: 18px;
+               cursor: pointer;
+               box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+             }  #atras-btn:hover {
+               background-color: #ff8c00;
+             }
+             </style>
+   
+</body>
+</html>

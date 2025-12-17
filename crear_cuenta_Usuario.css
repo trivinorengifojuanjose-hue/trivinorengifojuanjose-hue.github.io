@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+ 
+.formulario-contenedor{
+    min-height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;
+  
+    transition: all 0.4s;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.formulario-contenedor form{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+ 
+    width: 500px;
+    text-align: center;
+    justify-content: center;
+}
+.formulario-contenedor form h3{
+    font-size: 30px;
+  
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+}
+.formulario-contenedor form input{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 20px;
+    margin: 8px 0;
+
+    border-radius: 5px;
+}
+.formulario-contenedor form .btn-formularioLogin{
+    background-color: rgb(160, 209, 224);
+    color: rgb(2, 0, 145);
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+    width: 35%;
+    float: right;
+}
+.formulario-contenedor form .btn-formularioRegister{
+    background-color: rgb(160, 209, 224);
+    color: rgb(2, 0, 145);
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+}
+.formulario-contenedor form .botones{
+    min-width: 100%;
+}
+.formulario-contenedor form .recuerdaMe{
+    text-transform: capitalize;
+    font-size: 20px;
+    float: left;
+    padding: 15px 0px;
+}
+.formulario-contenedor form input[type= "checkbox"]{
+    width: 20px;
+}
+.formulario-contenedor p{
+    margin-top: 20px;
+    font-size: 20px;
+ 
+}
+.formulario-contenedor p a{
+    color: 8182e0;
+}
+.formulario-contenedor form .btn-formularioLogin:hover{
+    background: rgb(2, 0, 145);;
+  
+}
+.formulario-contenedor form .btn-formularioRegister:hover{
+    background: rgb(2, 0, 145);;
+
+}
+#atras-btn {
+    position: fixed;    
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(59, 181, 215);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}  #atras-btn:hover {
+    background-color: #30a4e3;
+  }
+
+select {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    outline: 0;
+    background: rgb(247, 247, 247);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(2, 0, 145);
+    padding: 4px;
+    border-radius: 9px;
+  }

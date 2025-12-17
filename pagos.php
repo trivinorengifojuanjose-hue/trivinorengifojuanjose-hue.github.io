@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="pagos.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <form action="iniciosesionadmi.php" method="post">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">Datos cliente</h3>
+
+                <div class="inputBox">
+                    <span>Nombre completo :</span>
+                    <input type="text" name= "nombreCompleto" placeholder="Juan Jose">
+                </div>
+                <div class="inputBox">
+                    <span>Email :</span>
+                    <input type="email" name="correo" placeholder="example@example.com">
+                </div>
+                <div class="inputBox">
+                    <span>Dirección :</span>
+                    <input type="text" name="direccion" placeholder="calle - carrera - barrio ">
+                </div>
+                <div class="inputBox">
+                    <span>Ciudad :</span>
+                    <input type="text" name="ciudad" placeholder="Cali">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>País :</span>
+                        <input type="text" name="pais" placeholder="Colombia">
+                    </div>
+                    <div class="inputBox">
+                        <span>Código postal :</span>
+                        <input type="text" name="codigop" placeholder="4-72">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">pago</h3>
+
+                <div class="inputBox">
+                    <span>Tarjetas aceptadas:</span>
+                    <img src="card.PNG" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>Nombre en la tarjeta :</span>
+                    <input type="text" name="nombretarjeta" placeholder="Sr. Juan Jose">
+                </div>
+                <div class="inputBox">
+                    <span>Número de tarjeta de crédito :</span>
+                    <input type="number" name="numerotarjeta" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>Mes de caducidad:</span>
+                    <input type="text" name="mescaducidad" placeholder="Agosto">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Año de caducidad:</span>
+                        <input type="number" name="añocaducidad" placeholder="2022">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" name="cvv" placeholder="1234">
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+
+        <input type="submit" value="Adquirir membresía" class="submit-btn">
+        <a href="paginaadministrador.html"></a>
+
+
+    </form>
+
+</div>    
+<a href="Membresias.html" id="atras-btn">Atras</a>
+</body>
+</html>
